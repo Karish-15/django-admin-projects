@@ -52,7 +52,7 @@ A Django webapp to manage Employee details and Invite other employees to your gr
 ## Screenshots
 
 ![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/859e8a2d88a635d7ceb08bca47e110883bde6084/invitation_project/invitation_screenshots/Home.jpg)
-![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/859e8a2d88a635d7ceb08bca47e110883bde6084/invitation_project/invitation_screenshots/Create_invitation.jpg)
+![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/main/invitation_project/invitation_screenshots/Create_invitation.jpg)
 ![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/859e8a2d88a635d7ceb08bca47e110883bde6084/invitation_project/invitation_screenshots/invitation_list.jpg)
 ![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/859e8a2d88a635d7ceb08bca47e110883bde6084/invitation_project/invitation_screenshots/group_list.jpg)
-![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/859e8a2d88a635d7ceb08bca47e110883bde6084/invitation_project/invitation_screenshots/Group_details.jpg)
+![Home](https://raw.githubusercontent.com/Karish-15/django-admin-projects/main/invitation_project/invitation_screenshots/Group_details.jpg)
