@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="{% url 'invitation_create' %}">Create Invitation</a>
+    {% if invitation %}
+        {% for invite in invitation %}
+            <h3>{{ invite.group.name }}</h3>
+            <p>{{invite.sender}} has invited you!</p>
+            <a href="{% url 'invitation_accept' invite.id %}">Accept</a>
+            <a href="{% url 'invitation_reject' invite.id %}">Decline</a>
+            <br>
+        {% endfor %}
+    {% endif %}
+{% endblock content %}

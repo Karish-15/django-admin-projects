@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <h2>Error retrieving Invitation data. Check login details.</h2>
+    {% else %}
+    <h3>Accept Invitation</h3>
+    <p>Accept invitation to join {{invitation.group.name}}?</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Accept</button>
+    </form>
+
+    {% endif %}
+{% endblock content %}
+
+

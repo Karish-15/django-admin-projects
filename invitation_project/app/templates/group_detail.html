@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3>Group Detail</h3>
+    <h4>{{ group.name }}</h4>
+
+    <h4>Members</h4>
+    <ul>
+        {% for member in group.members.all %}
+            <li>{{ member.name }}, {{ member.position }}</li>
+        {% endfor %}
+    </ul>
+
+
+    
+{% endblock content %}

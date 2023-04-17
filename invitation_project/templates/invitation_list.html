@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if invitation %}
+        {% for invite in invitation %}
+            <h3>{{ invite.group.name }}</h3>
+            <p>{{invite.sender}} has invited you!</p>
+            <a href="{% url 'accept_invite' invite.id %}">Accept</a>
+            <a href="{% url 'decline_invite' invite.id %}">Decline</a>
+            <br>
+        {% endfor %}
+    {% endif %}
+{% endblock content %}

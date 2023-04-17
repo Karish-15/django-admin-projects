@@ -1,0 +1,53 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Django Payroll System</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+        {% block styling %}
+
+        {% endblock styling %}
+    </head>
+
+    <body>
+        <header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Django Payroll</a></h1>
+            </div>
+        </header>
+        
+        <div class="nav-left">
+            {% if user.is_authenticated %}
+            
+                <p>Hi {{user.username}}!</p>
+                <a href="{% url 'logout' %}">Logout</a>
+            <hr>
+            {% else %}
+
+                <p>You're not logged in</p>
+                <a href="{% url 'login' %}">Login</a>
+            
+            {% endif %}
+        </div>
+
+        <div class="nav-left">
+            <h4>
+                <!-- link to attendance  -->
+                <a href="{% url 'attendance' %}">Attendance Manager</a>
+            </h4>
+            <h4>
+                <!-- link to salary -->
+                <a href="{% url 'salary' %}">Salary Manager</a>
+            </h4>
+        </div>
+
+        <hr>
+
+        <div>
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+    </body>
+</html>
